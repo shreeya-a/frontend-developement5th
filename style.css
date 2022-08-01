@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.div-example {
+    background-color: red; 
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px 20px 5px;
+    margin: 10px 15px;
+}
+
+.content-holder{
+    margin: 30px 10px;
+    background-color: lime;
+    border: 2px solid black;
+    width: 504px;
+    padding: 25px 10px;
+    position: relative;
+    /* overflow: hidden; */
+    /* position: absolute;
+    position: fixed;
+    position: sticky;
+    position: static; */
+}
+
+.link{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.lnk{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    color: azure;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.align{
+    overflow: hidden;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
