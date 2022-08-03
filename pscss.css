@@ -7,7 +7,7 @@ body{
     /* font-size: 17px;
     line-height: 1.53;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;pscss.css
     font-weight: 400; */
     font: 17px/1.53 'Roboto', 'sans-serif';
 }
@@ -21,6 +21,28 @@ body{
     position: relative;
     /* background: color url() repeat 50% 50% /cover; */
     /* width: 100vw; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* .banner-part::before{
+    content: '';
+    height: 100vh;
+    height DINA KO lagi matra ho.. instead of giving it in banner-part 100vh yesma dida ni huncha re
+
+} */
+.banner-part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #bf3d42;
+    /* background-color: rgba( 191,61,66,1); yo chai incase directly opacity milauna milena bhane */
+    
+    mix-blend-mode: darken;
 }
 .bg-stretch{
     position: absolute;
@@ -32,4 +54,64 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.banner-content{
+    position: relative;
+    z-index: 9;
+    /* max-width: 976px; browser ma farak parcha so change if needed */
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.banner-content p{
+    margin: 0 0 25px;
+}
+.overline-text{
+    font-size: 34px;;
+    text-transform: uppercase;
+}
+.btn{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+/* .btn.primary{
+    padding: 15px;
+    /* background-color: #333333; 
+    background-color:black;
+    border: 2px solid #fff;
+    min-width: 230px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+} */
+.btn.primary{
+    
+    padding: 15px;
+    background-color:black;
+    border: 2px solid #fff;
+    width: 230px;
+    display: block;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 15px 50px;
+}
+#header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
