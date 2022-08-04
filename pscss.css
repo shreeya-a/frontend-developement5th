@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     color: black;
@@ -30,7 +31,7 @@ body{
     content: '';
     height: 100vh;
     height DINA KO lagi matra ho.. instead of giving it in banner-part 100vh yesma dida ni huncha re
-
+    display:block;
 } */
 .banner-part::after{
     content: '';
@@ -72,20 +73,21 @@ body{
 }
 .btn{
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
-/* .btn.primary{
+.btn.primary{
     padding: 15px;
-    /* background-color: #333333; 
+    /* background-color: #333333; */
     background-color:black;
     border: 2px solid #fff;
     min-width: 230px;
     display: inline-block;
     vertical-align: top;
     border-radius: 30px;
-} */
-.btn.primary{
+    color: #fff;
+}
+/* .btn.primary{
     
     padding: 15px;
     background-color:black;
@@ -94,7 +96,7 @@ body{
     display: block;
     border-radius: 30px;
     margin: 0 auto;
-}
+} */
 h1{
     font-weight: 700;
     font-size: 65px;
@@ -114,4 +116,75 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    /* max-width deko ma content center ma lagna margin 0 auto garne */
+    margin: 0 auto;
+}
+h2{
+    
+    font-family:'Roboto', 'sans-serif' ;
+    font-size: 35px;
+    line-height: 2;
+    font-weight: 700;
+    color: #010304;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+}
+.style{
+    position: relative;
+    padding-left: 44px;
+}
+.style::after{
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url('./images/iconchips.png') no-repeat center /cover;
+    display: block;
+}
+.two-columns{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.two-columns .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.two-columns .col.large-col{
+    width: 58.33%;
+}
+.two-columns .col.small-col{
+    width: 41.66%;
+}
+.about-part{
+    padding: 120px;
+}
+.about-part .image-wrap{
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    /* width: 500px;
+    height: 345px; */
+    padding-top: 61%;
+}
+.about-part p{
+    margin: 0;
+}
+.about-part .btn-wrap{
+    margin-top: 60px;
+    
+}
+.btn.secondary{
+    padding: 15px;
+    background-color:#bf3d42;
+    border: 2px solid #bf3d42;
+    min-width: 180px;
+    border-radius: 25px;
+    color: #fff;
 }
