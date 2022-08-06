@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    color: black;
+    color: #010304;
     /* font-size: 17px;
     line-height: 1.53;
     font-family: 'Poppins', sans-serif;
@@ -75,6 +75,9 @@ body{
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }
 .btn.primary{
     padding: 15px;
@@ -87,6 +90,7 @@ body{
     border-radius: 30px;
     color: #fff;
 }
+
 /* .btn.primary{
     
     padding: 15px;
@@ -161,6 +165,9 @@ h3{
     background: url('./images/iconchips.png') no-repeat center /cover;
     display: block;
 }
+.nav span{
+    display: block;
+}
 
 .two-columns,
 .four-columns{
@@ -210,11 +217,10 @@ h3{
     background-color:#bf3d42;
     border: 2px solid #bf3d42;
     min-width: 180px;
-    border-radius: 25px;
-    color: #fff;
     display: inline-block;
-    height: 30px;
-    text-align: center;
+    vertical-align: top;
+    border-radius: 30px;
+    color: #fff;
 }
 .products-part{
     text-align: center;
