@@ -1,6 +1,7 @@
 .container{
-    max-width: 1170px;
+    max-width: 1210px; 
     width: 100%;
+    padding: 0 20px;
     /* max-width deko ma content center ma lagna margin 0 auto garne */
     margin: 0 auto;
     &.lg{
@@ -20,7 +21,7 @@
         position: absolute;
         top: 10px;
         left: 0;
-        background: url('./images/iconchips.png') no-repeat center /cover;
+        background: url('../img/icon-chips.png') no-repeat center /cover;
         display: block;
     }
 }
