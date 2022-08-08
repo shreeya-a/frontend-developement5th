@@ -60,20 +60,18 @@ $headings-color: $black !default;
 
 $animation-speed: 0.3s;
 
-// $icomoon-font-family: "icomoon" !default;
-// $icomoon-font-path: "../fonts" !default;
 
-// $icon-arrow-right: "\e906";
-// $icon-arrow-left: "\e907";
-// $icon-search: "\e904";
-// $icon-add: "\e900";
-// $icon-right: "\e901";
-// $icon-left: "\e902";
-// $icon-play: "\e90c";
-// $icon-linkedin: "\e905";
-// $icon-instagram: "\e908";
-// $icon-angle-left: "\e909";
-// $icon-down: "\e903";
-// $icon-angle-up: "\e90a";
-// $icon-angle-right: "\e90b";
-// $icon-pause: "\ea16";
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-prev: "\e906";
+$icon-next: "\e907";
+$icon-instagram: "\e900";
+$icon-facebook: "\e901";
+$icon-linkedin: "\e902";
+$icon-twitter: "\e903";
+$icon-mail: "\e904";
+$icon-phone: "\e905";
+$icon-location: "\e947";
+$icon-quotes-left: "\e977";
+$icon-quotes-right: "\e978";
