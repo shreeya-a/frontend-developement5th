@@ -12,4 +12,14 @@
         justify-content: space-between;
         align-items: center;
     }
+    .nav-opener{
+        @include size(32px,20px);
+        display:inline-block;
+        vertical-align: top;
+        position: relative;
+
+        span{
+            
+        }
+    }
 }
