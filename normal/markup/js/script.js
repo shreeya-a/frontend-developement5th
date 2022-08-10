@@ -42,7 +42,7 @@ jQuery('.feedback-slider').slick({
     ]
   });
   jQuery('.banner-slider').slick({
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 1,
@@ -53,3 +53,9 @@ jQuery('.feedback-slider').slick({
     
  
   });
+  var opener = jQuery('.nav-opener');
+  if(opener){
+    opener.on('click',function(){
+      jQuery('body').toggleClass('nav-active');      
+    })
+  }
