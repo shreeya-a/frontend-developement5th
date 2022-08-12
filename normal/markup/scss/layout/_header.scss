@@ -68,7 +68,7 @@
             font-size: 25px;
             font-weight: 700;
             text-transform: capitalize;
-            @include animate(color,000.35s,ease);
+            @include animate(color,0.35s,ease);
 
             &:hover{
                 color:$red;
@@ -85,6 +85,7 @@
 
         span{
             background-color: $black;
+            top: 16px;
 
             &:first-child{
                 transform: rotate(45deg);

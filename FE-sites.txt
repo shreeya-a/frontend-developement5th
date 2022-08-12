@@ -1,0 +1,4 @@
+icomoon
+flaticon
+bootstrap 4
+w3c markup validation

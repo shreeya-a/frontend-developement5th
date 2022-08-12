@@ -90,6 +90,11 @@ $colors: map-merge((
 }
 
 @each $color, $value in $colors {
+	.border-#{$color} {
+		border-color: $value !important;
+	}
+}
+@each $color, $value in $colors {
 	.text-hover-#{$color} {
 		&:hover {
 			text-decoration: none !important;
@@ -114,7 +119,10 @@ $spacers: map-merge((
 	0_9: 0.9rem,
 	10: 1rem,
 	15: 1.5rem,
-	30: 3rem
+	30: 3rem,
+	40:6rem,
+	50:5rem,
+	100:10rem
 	), $spacers);
 
 $rem-base: 10px;
@@ -158,6 +166,34 @@ $input-font-size: 1.6rem;
 
 $input-box-shadow: inset 0 2px 5px 0 $orange;
 
-$btn-border-radius:     0;
+//btn-border-radius
+$btn-border-radius:  2.5rem;
+$btn-padding-y:   1.5rem;
+$btn-padding-x:  2rem;
+$btn-font-family:  $font-family-base;
+$btn-font-size:  1.7rem;
+$btn-line-height: 1;
+$btn-borer-width: 0.2rem;
+
 $btn-font-weight:  $font-weight-normal; 
-// $body-bg:                   red;
+$body-bg:                   white;
+
+//box-shadow
+$box-shadow:                  0 0 1rem 1rem rgba(#020308, .06) !default;
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-prev: "\e906";
+$icon-next: "\e907";
+$icon-instagram: "\e900";
+$icon-facebook: "\e901";
+$icon-linkedin: "\e902";
+$icon-twitter: "\e903";
+$icon-mail: "\e904";
+$icon-phone: "\e905";
+$icon-location: "\e947";
+$icon-quotes-left: "\e977";
+$icon-quotes-right: "\e978";
+
+
